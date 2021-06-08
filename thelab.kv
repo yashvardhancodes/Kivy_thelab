@@ -1,4 +1,41 @@
-BoxLayoutExample:
+StackLayoutExample:
+
+
+<StackLayoutExample>:
+    # left-right, top-bottom
+    #orientation: "rl-bt"
+    #padding: ("20dp", "20dp", "20dp", "20dp")
+
+<GridLayoutExample@GridLayout>:
+    #rows
+    #cols
+    #cols: 3
+    rows: 2
+    Button:
+        text: "A"
+        size_hint: .5, .1
+    BoxLayoutExample:
+    Button:
+        text: "C"
+    Button:
+        text: "D"
+        size_hint: .5, .1
+    Button:
+        text: "E"
+    Button:
+        text: "F"
+
+<AnchorLayoutExample>:
+    # right, left, center
+    anchor_x: "center"
+    # top, bottom, center
+    anchor_y: "top"
+    BoxLayout
+        size_hint: .2, .2
+        Button:
+            text: "A"
+        Button:
+            text: "B"
 
 
 <BoxLayoutExample>:
