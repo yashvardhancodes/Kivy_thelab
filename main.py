@@ -11,10 +11,10 @@ from kivy.uix.button import Button
 class StackLayoutExample(StackLayout):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
-        self.orientation = "lr-tb"  # l=left, r=right, t=top, b=bottom
-        self.padding = (dp(20), dp(20), dp(20), dp(20))
-        self.spacing = (dp(20), dp(20))
-        for i in range(0, 10):
+        # self.orientation = "lr-tb"  # l=left, r=right, t=top, b=bottom
+        # self.padding = (dp(20), dp(20), dp(20), dp(20))
+        # self.spacing = (dp(20), dp(20))
+        for i in range(0, 100):
             b = Button(text=str(i + 1), size_hint=(None, None),
                        size=(dp(100), dp(100)))
             self.add_widget(b)
